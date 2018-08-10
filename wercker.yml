@@ -44,5 +44,5 @@ build:
         image-name: magento2 
         username: firadaboss # Registry username  
         password: fira2212 # Registry password
-        registry: https://hub.docker.com
+        registry: https://hub.docker.com/r
         repository: firadaboss/magento2          
