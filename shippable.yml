@@ -35,7 +35,6 @@ build:
 
   # http://docs.shippable.com/ci/shippableyml/#post_ci
   post_ci:
-    - docker login docker.io
     - docker build -t $REGISTRY_URL/$PROJECT_NAME/$IMAGE_REPO:$BRANCH.$BUILD_NUMBER .
     - docker push $REGISTRY_URL/$PROJECT_NAME/$IMAGE_REPO:$BRANCH.$BUILD_NUMBER
 
