@@ -36,7 +36,7 @@ build:
   # http://docs.shippable.com/ci/shippableyml/#post_ci
   post_ci:
     - docker build -t $REGISTRY_URL/$PROJECT_NAME/$IMAGE_REPO:$BRANCH.$BUILD_NUMBER .    
-    - docker tag drydock $REGISTRY_URL/$PROJECT_NAME/$IMAGE_REPO
+    #- docker tag drydock $REGISTRY_URL/$PROJECT_NAME/$IMAGE_REPO
     - docker push $REGISTRY_URL/$PROJECT_NAME/$IMAGE_REPO:$BRANCH.$BUILD_NUMBER 
 
 # Integrations are used to connect external resources to CI
