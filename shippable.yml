@@ -43,5 +43,5 @@ build:
 integrations:
   # adding private docker hub integration so that credentials are available to CI Job
   hub:
-    - integrationName: docker-integration
+    - integrationName: docker_integration
       type: dockerRegistryLogin
