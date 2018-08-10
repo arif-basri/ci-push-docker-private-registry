@@ -15,9 +15,9 @@ env:
     - CODE_COVERAGE_DIR=$SHIPPABLE_REPO_DIR/shippable/codecoverage
     - TESTS_LOC_DIR=$SHIPPABLE_REPO_DIR/tests
     - MOD_LOC=$SHIPPABLE_REPO_DIR/node_modules/.bin/
-    - REGISTRY_URL=quay.io
-    - IMAGE_REPO=ci-push-docker-private-registry
-    - PROJECT_NAME=devops_recipe
+    - REGISTRY_URL=registry.hub.docker.com
+    - IMAGE_REPO=magento2
+    - PROJECT_NAME=firadaboss
 
 build:
 
@@ -43,5 +43,5 @@ build:
 integrations:
   # adding private docker hub integration so that credentials are available to CI Job
   hub:
-    - integrationName: docker-pvt-integration
+    - integrationName: docker-integration
       type: dockerRegistryLogin
