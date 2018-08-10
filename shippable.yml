@@ -36,7 +36,7 @@ build:
   # http://docs.shippable.com/ci/shippableyml/#post_ci
   post_ci:
     - docker build -t $REGISTRY_URL/$PROJECT_NAME/$IMAGE_REPO:$BRANCH.$BUILD_NUMBER .    
-    - docker tag drydock/u16nodall:v6.7.4 firadaboss/magento:latest
+    - docker tag drydock/u16nodall:v6.7.4 $REGISTRY_URL/$PROJECT_NAME/$IMAGE_REPO:$BRANCH.$BUILD_NUMBER
     - docker push $REGISTRY_URL/$PROJECT_NAME/$IMAGE_REPO:$BRANCH.$BUILD_NUMBER
 
 # Integrations are used to connect external resources to CI
