@@ -37,12 +37,12 @@ build:
           
     - internal/docker-build:
         dockerfile: Dockerfile 
-        image-name: magento2      
+        image-name: magento2
         
     - internal/docker-push:
         # specify the image to be pushed - this is the one we created earlier
-        image-name: magento2 
+        image-name: magento2
         username: firadaboss # Registry username  
         password: fira2212 # Registry password
         registry: https://registry.hub.docker.com/v2
-        repository: r/firadaboss/magento2          
+        repository: firadaboss/magento2          
